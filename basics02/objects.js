@@ -58,10 +58,44 @@ const ob2 = { 3:'c', 4:'d'};
 // const obj3 = Object.assign({}, ob1 ,ob2);  // object.assign( target, source)
 // console.log(obj3);  //concatenated successfully
 
-const obj3 = { ...ob1, ...ob2 };
-console.log(obj3); //this is the most used method in case of objects
+// const obj3 = { ...ob1, ...ob2 };
+// console.log(obj3); //this is the most used method in case of objects
 
-console.log(Object.keys(tinderuser)); // returns the key into array
-console.log(Object.values(tinderuser)); // returns values, into array
+// console.log(Object.keys(tinderuser)); // returns the key into array
+// console.log(Object.values(tinderuser)); // returns values, into array
 
 // we can later iterate or play with that array too, storing in another variable
+
+
+// object destructure, json api
+
+// const course = {
+//     coursename: "js in hindi",
+//     price: "999",
+//     courseInstructor: "hitesh"
+// }
+// // 
+// // const {courseInstructor} = course;
+// // console.log(courseInstructor);
+
+//  const {courseInstructor: instructor} = course; //destrucure
+//  console.log(instructor);
+
+
+// const navBar = () => {
+
+// }
+
+// navBar (company = "hitesh")
+
+
+//api (apna kaam kisi aur k sar par daal dena )
+//JSON
+{
+    "name": "sanjay",
+     "age": "20"
+    
+}
+
+//apis can be found in the formate of array
+
