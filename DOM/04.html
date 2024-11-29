@@ -38,6 +38,25 @@ function addoptilanguage(langname) {
 addoptilanguage('golang');
 addoptilanguage('swift');
 
+const secondlang = document.querySelector("li:nth-child(2)");
+const newli = document.createElement('li');
+newli.textContent = "mojo";
+secondlang.replaceWith(newli);
+
+// the output will look like this
+// <ul>
+//     <li>JavaScript</li>
+//     <li>mojo</li>
+//     <li>Java</li>
+// </ul>
+
+//edit
+const firstlang = document.querySelector("li:first-child")
+firstlang.outerHTML = '<li>typescript</li>'
+
+//remove
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
 
 </script>
 </html>
