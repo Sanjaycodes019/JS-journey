@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM in JS</title>
+</head>
+<body style = " background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+// function addlanguage(langname) {
+//     const li = document.createElement('li');
+//     li.innerHTML = `${langname}`; // Corrected to use ${} for template literals
+//     document.querySelector('.language').appendChild(li);
+// }
+
+// addlanguage("python");
+// addlanguage("typescript");
+
+
+function addoptilanguage(langname) {
+    // Create a new <li> element
+    const li = document.createElement('li');
+    
+    // Create a text node with the provided language name
+    const addtext = document.createTextNode(langname);
+    
+    // Append the text node to the <li>
+    li.appendChild(addtext);
+    
+    // Append the <li> to the .language element
+    document.querySelector('.language').appendChild(li);
+}
+
+// Add languages
+addoptilanguage('golang');
+addoptilanguage('swift');
+
+
+</script>
+</html>

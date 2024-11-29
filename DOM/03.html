@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM in JS</title>
+</head>
+<body style = " background-color: #212121; color: #fff;">
+    <script>
+      // Create a new div element
+const div = document.createElement('div');
+
+// Log the div element to the console
+console.log('div'); // Output: 'div'
+
+// Assign a class name to the div
+div.className = 'sanjay'; // The div now has a class 'sanjay'
+
+// Assign an ID to the div
+div.id = 'gupta'; // The div now has an ID 'gupta'
+
+// Add a 'title' attribute to the div
+div.setAttribute("title", "generated title"); // Sets the title attribute to 'generated title'
+
+// Set the background color of the div
+div.style.backgroundColor = 'green'; // Changes the background color to green
+
+// Add a border to the div
+div.style.border = '2px solid black'; // Adds a black border with a width of 2px
+
+// Set inner text of the div
+div.innerText = "sanjay gupta"; // Sets the text inside the div to 'sanjay gupta'
+
+// Create a text node
+const addtext = document.createTextNode("sanjay is hero"); // Creates a text node with the text 'sanjay is hero'
+
+// Append the text node to the div
+div.appendChild(addtext); // Adds the text node to the div
+
+// Append the div to the document body
+document.body.appendChild(div); // Adds the div to the webpage body
+
+// Add rounded corners to the div
+div.style.borderRadius = '50%'; // Makes the div's corners fully rounded (circle shape if square)
+    </script>
+</body>
+</html>
