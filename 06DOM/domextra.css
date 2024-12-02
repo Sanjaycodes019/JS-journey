@@ -1,0 +1,18 @@
+h1{
+    color: goldenrod;
+}
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin 5px;
+    text-align: center;
+    background-color: goldenrod;
+    align-items: center;
+    color: #255ADF;
+}
