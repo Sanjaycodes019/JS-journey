@@ -6,7 +6,7 @@ const first = document.querySelector("p");
 const all = document.querySelectorAll("p");
 
 
-let h4 = document.querySelector("h4");
+
 
 h4.innerText = h4.innerText + ", Studying in JS!" //concatenate the string
 

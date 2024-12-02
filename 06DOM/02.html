@@ -2,28 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM in JS</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .highlight {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
 </head>
-<body style="background-color: #212121; color: #fff;">
-    <div class="parent">
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thursday</div>
+<body>
+    <h1 id="main-title">Welcome to DOM Practice</h1>
+    <p class="intro">This is a practice webpage for learning JavaScript DOM manipulation.</p>
+    
+    <div id="content">
+        <ul class="item-list">
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>
+        <button id="add-item">Add Item</button>
     </div>
+    
+    <section>
+        <h2 class="section-title">Dynamic Section</h2>
+        <p>This section has random content.</p>
+        <input type="text" id="input-box" placeholder="Type something..." />
+        <button id="change-title">Change Title</button>
+    </section>
+    
+    <footer id="footer">
+        <p>Created by <span id="author">Sanjay</span></p>
+        <button id="toggle-footer">Toggle Footer</button>
+    </footer>
+    
+    <script src="02.js"></script>
 </body>
-<script>
-const parent = document.querySelector('.parent');
-console.log(parent);
-console.log(parent.children);
-console.log(parent.children[1].innerHTML);
-
-for ( let i = 0; i < parent.children.length; i++){
-   console.log(parent.children[i].innerHTML);
-}
-
-parent.children[1].style.color = 'orange';
-console.log(parent.firstElementChild);
-
-</script>
 </html>

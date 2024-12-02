@@ -1,30 +1,19 @@
-// DOM manipulation in js
+// Select the element with the ID 'title'
+const title = document.getElementById('title');
 
-/*
-document.getElementById('title').getAttribute('class')
-'heading'
-document.getElementById('title').setAttribute('class', 'test')
-undefined
-document.getElementById('title')
-<h1 id=​"title" class=​"test">​DOM learning in JS.​</h1>​
-const title = document.getElementById('title')
-undefined
-title
-<h1 id=​"title" class=​"test">​DOM learning in JS.​</h1>​
-title.style.backgroundcol
-undefined
-title.style.backgroundColor = 'green'
-'green'
-title.style.padding = '15px'
-'15px'
-title.style.borderRadius = '50%'
-'50%'
-title
-<h1 id=​"title" class=​"test" style=​"background-color:​ green;​ padding:​ 15px;​ border-radius:​ 50%;​">​DOM learning in JS.​</h1>​
-title.textContent
-'DOM learning in JS.'
-title.innerHTML
-'DOM learning in JS.'
-title.innerText
-'DOM learning in JS.'
-*/
+// Get the current class attribute value
+console.log('Initial class:', title.getAttribute('class'));
+
+// Set a new class attribute value
+title.setAttribute('class', 'test');
+console.log('Updated class:', title.getAttribute('class'));
+
+// Apply new styles to the element
+title.style.backgroundColor = 'green'; // Set background color
+title.style.padding = '15px';          // Add padding
+title.style.borderRadius = '50%';      // Round the borders
+
+// Log different types of text content
+console.log('Text content:', title.textContent); // Get text content
+console.log('Inner HTML:', title.innerHTML);     // Get inner HTML
+console.log('Inner Text:', title.innerText);     // Get visible text
