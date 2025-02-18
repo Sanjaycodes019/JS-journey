@@ -52,3 +52,4 @@ Vue: Growing, but fewer job opportunities compared to React/Angular.
 -> Choose Vue if you want an easy-to-learn framework for fast development.
 
 */
+
